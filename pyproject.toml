@@ -1,0 +1,49 @@
+[project]
+name = "CorticalRegionSelection"
+version = "0.1.0"
+description = "Cortical Region Contributions Analysis for EEG-Based Cognitive Workload Assessment"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    # Core scientific computing - compatible versions
+    "pandas>=2.2.0,<2.3.0", # Pin to avoid arrow extension conflicts
+    "numpy>=1.21.0,<2.1.0",
+    "scipy>=1.15.0",
+    # Visualization
+    "matplotlib>=3.5.0",
+    "seaborn>=0.13.0",
+    # Machine Learning
+    "scikit-learn>=1.7.0",
+    # Deep Learning
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "torchaudio>=2.0.0",
+    "lightning>=2.0.0",
+    "tensorboard>=2.10.0",
+    # Data I/O - carefully managed versions to avoid conflicts
+    "pyarrow>=15.0.0,<22.0.0", # Pin to compatible version
+    "fastparquet>=2024.5.0",
+    "h5py>=3.7.0",
+    # Specialized packages
+    "esi-syncopy>=2023.9",
+    "einops>=0.8.0",
+    "temporaldata>=0.1.3",
+    # Progress and utilities
+    "tqdm>=4.64.0",
+    "pathlib2>=2.3.0", # Enhanced pathlib support
+    "timm>=1.0.22",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "jupyter>=1.1.1",
+    "notebook>=6.4.0",
+    "jupyterlab>=3.0.0",
+]
+
+notebook = [
+    "ipywidgets>=8.0.0",
+    "plotly>=5.0.0",
+    "bokeh>=3.0.0",
+]
