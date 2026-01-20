@@ -32,6 +32,9 @@ dependencies = [
     "tqdm>=4.64.0",
     "pathlib2>=2.3.0", # Enhanced pathlib support
     "timm>=1.0.22",
+    "mne>=1.11.0",
+    "spkit>=0.0.9.7",
+    "entropyhub>=2.0",
 ]
 
 [dependency-groups]
